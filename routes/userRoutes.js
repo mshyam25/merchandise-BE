@@ -19,7 +19,7 @@ router.route('/profile').get(getUserProfile).put(protect, updateUserProfile)
 router
   .route('/:id')
   .delete(protect, admin, deleteUser)
-  .get(protect, admin, getUser)
+  .get(protect, getUser)
   .put(protect, admin, updateUser)
 
 export const userRoutes = router
