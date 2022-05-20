@@ -15,9 +15,10 @@ const productSchema = mongoose.Schema(
       type: String,
       required: true,
     },
-    brand: {
+    size: {
       type: String,
       required: true,
+      default: 'Free Size',
     },
     category: {
       type: String,
